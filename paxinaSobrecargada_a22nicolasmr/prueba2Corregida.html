@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Súper Noticias Mundiales!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 36px;
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        .banner {
+            background-color: #f39c12;
+            font-size: 24px;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        nav {
+            width: 200px;
+            float: left;
+            background-color: #2980b9;
+            padding: 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        .column {
+            width: 33%;
+            padding: 20px;
+        }
+
+        .ads,
+        .social {
+            font-size: 18px;
+            color: #fff;
+            background-color: #e74c3c;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 30px;
+            border: 2px solid #2980b9;
+            text-align: center;
+        }
+
+        .show-popup {
+            display: block;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #f39c12;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .small-text {
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>¡Súper Noticias Mundiales y Todo lo que Te Imaginas!</h1>
+
+    <div class="banner" role="banner">
+        ¡OFERTAS! ¡DESCUENTOS! ¡NO TE LO PIERDAS! ¡CLICA AHORA Y GANA UN IPHONE GRATIS!
+    </div>
+
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Últimas Noticias</a></li>
+            <li><a href="#">Compras</a></li>
+            <li><a href="#">Tecnología</a></li>
+            <li><a href="#">Deportes</a></li>
+            <li><a href="#">Entretenimiento</a></li>
+            <li><a href="#">Política</a></li>
+            <li><a href="#">Estilo de Vida</a></li>
+            <li><a href="#">Viajes</a></li>
+            <li><a href="#">Clima</a></li>
+            <li><a href="#">Horóscopo</a></li>
+            <li><a href="#">Recetas</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Misterios</a></li>
+            <li><a href="#">Foro</a></li>
+            <li><a href="#">Chat en Vivo</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="column">
+            <h2>Noticias Importantes</h2>
+            <p><strong>¡NOTICIA DE ÚLTIMA HORA!</strong></p>
+            <img src="noticia.jpg" alt="Imagen representativa de la noticia importante" width="100%" loading="lazy">
+            <p><a href="#">CLIC AQUÍ PARA LEER MÁS NOTICIAS IMPORTANTES</a></p>
+        </div>
+        <div class="column">
+            <div class="ads">
+                ¡OFERTAS! 70% de descuento en productos que no sabías que querías.
+            </div>
+            <div class="ads">
+                ¡Compra ahora y recibe un descuento adicional!
+            </div>
+            <div class="popup" id="popup" role="dialog" aria-labelledby="popup-title" aria-hidden="true">
+                <h2 id="popup-title">Notificaciones</h2>
+                <p>¿Estás seguro de que no quieres recibir nuestras notificaciones?</p>
+                <button onclick="hidePopup()">No, gracias</button>
+            </div>
+        </div>
+        <div class="column">
+            <div class="social">
+                ¡Síguenos en nuestras redes sociales AHORA!
+            </div>
+            <div class="social">
+                ¡Comparte esto con tus amigos!
+            </div>
+        </div>
+    </div>
+
+    <footer role="contentinfo">
+        <p>Enlaces a otros <a href="#">sitios que quizá te interesen</a>.</p>
+        <p class="small-text">Términos y condiciones en letra legible que todos pueden leer.</p>
+    </footer>
+
+    <script>
+        function showPopup() {
+            document.getElementById('popup').classList.add('show-popup');
+            document.getElementById('popup').setAttribute('aria-hidden', 'false');
+        }
+
+        function hidePopup() {
+            document.getElementById('popup').classList.remove('show-popup');
+            document.getElementById('popup').setAttribute('aria-hidden', 'true');
+        }
+
+        setTimeout(showPopup, 10000);
+    </script>
+
+</body>
+
+</html>
