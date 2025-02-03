@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento4</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            margin: 5px;
+        }
+
+        #bandera {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        #izquierda {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        #derecha {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        #verde {
+            background-color: green;
+
+        }
+
+        #rojo {
+            background-color: red;
+        }
+
+        #azul {
+            background-color: blue;
+            flex: 0.5;
+            margin: 5px;
+        }
+
+        #violeta {
+            background-color: purple;
+        }
+
+        #verde,
+        #rojo,
+        #violeta {
+            flex: 1;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bandera">
+        <div id="izquierda">
+            <div id="verde"></div>
+            <div id="rojo"></div>
+        </div>
+        <div id="derecha">
+            <div id="azul"></div>
+            <div id="violeta"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

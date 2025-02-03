@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento con Grid</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #bandera {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            height: 100%;
+        }
+
+        #azul {
+            background-color: blue;
+        }
+
+        #blanco {
+            background-color: white;
+        }
+
+        #rojo {
+            background-color: red;
+        }
+
+        #azul,
+        #blanco,
+        #rojo {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bandera">
+        <div id="azul"></div>
+        <div id="blanco"></div>
+        <div id="rojo"></div>
+    </div>
+</body>
+
+</html>
