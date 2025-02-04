@@ -80,6 +80,18 @@ ul {
   border: 3px solid black;
   margin: 8vh;
 }
+#divEntrantes img,
+#divPrimeros img,
+#divSegundos img,
+#divAcompañantes img,
+#divPostres img,
+#divBebidas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
 /* -------------------------------------------- */
 #divPrimeros > div {
   background-color: #ffffff;
