@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura real</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: xx-large;
+            margin: 0; /* Quitar márgenes del body */
+            padding: 0;
+        }
+
+        #headerFuera {
+            display: flex;
+            flex: 0.10;
+            justify-content: center;
+            background-color: tomato;
+        }
+
+        header,
+        footer,
+        section,
+        nav,
+        aside {
+            color: white;
+        }
+
+        #section {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+            min-height: 0;
+        }
+
+        section {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            background-color: tomato;
+            margin: 5px;
+        }
+
+        nav,
+        aside {
+            background-color: tomato;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0.20;
+            margin: 5px; /* Reducir márgenes */
+        }
+
+        #headerSection>header {
+            display: flex;
+            background-color: rgb(155, 149, 68);
+            flex: 0.20;
+            justify-content: center;
+            align-items: center;
+            margin: 5px; /* Reducir márgenes */
+        }
+
+        section>p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #articleSection>article {
+            display: flex;
+            background-color: rgb(155, 149, 68);
+            flex: 0.60;
+            justify-content: center;
+            align-items: center;
+            margin: 5px; /* Reducir márgenes */
+        }
+
+        #footerSection>footer {
+            display: flex;
+            background-color: rgb(155, 149, 68);
+            flex: 0.20;
+            justify-content: center;
+            align-items: center;
+            margin: 5px; /* Reducir márgenes */
+        }
+
+        #footerFuera {
+            display: flex;
+            flex: 0.10;
+            justify-content: center;
+            background-color: tomato;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="headerFuera">
+        <p>header</p>
+    </header>
+
+    <div id="section">
+        <nav>
+            <p>nav</p>
+        </nav>
+        <section>
+            <p>section</p>
+            <div id="headerSection">
+                <header>
+                    <p>header</p>
+                </header>
+            </div>
+            <div id="articleSection">
+                <article>
+                    <p>article</p>
+                </article>
+            </div>
+            <div id="footerSection">
+                <footer>
+                    <p>footer</p>
+                </footer>
+            </div>
+        </section>
+        <aside>
+            <p>aside</p>
+        </aside>
+    </div>
+
+    <footer id="footerFuera">
+        <p>footer</p>
+    </footer>
+
+</body>
+
+</html>

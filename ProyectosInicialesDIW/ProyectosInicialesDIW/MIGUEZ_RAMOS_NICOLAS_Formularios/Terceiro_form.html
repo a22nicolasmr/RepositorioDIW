@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo form</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 80vw;
+            height: 50vh;
+            border: 0.02cm solid;
+        }
+        #divNombre,#divApellidos,#divCalleNum,
+        #divCodigoPost,#divProvincia,#divOpciones,
+        #divComentarios,#divBotones{
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            margin: 2px;
+            flex: 1;
+            flex-grow: 1;
+        }
+        #divFNacDni,#inputApellidos,#inputCaleNumero
+        ,#inputCiudadCodigoPostal,#inputProvinciaTelf,#divSelect,
+        #divtextAreaComentarios{
+            
+            justify-content: center;
+            width: 100%;
+        }
+
+        #divBotones{
+            
+            justify-content: center;
+            
+        }
+        #inputFNac,#inputDNI{
+            width: 10%;
+        }
+        #inputNombre{
+            width: 61%;
+        }
+
+        #inputDeApellidos,#inputDeCalleNumero{
+            width: 97%;
+        }
+        #inputCodigoPostal{
+            width: 10%;
+        }
+        #inputCiudad{
+            width: 77%;
+        }
+        #inputProvincia,#inputTelefono{
+            width: 43%;
+        }
+        label{
+            
+            margin-right: 1px;
+            width: 15%;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="divNombre">
+        <label for="nombre">Nombre:</label>
+        <div id="divFNacDni">
+            <input type="text" id="inputNombre" name="nombre" required>
+
+            <label for="fNac">F.Nac:</label>
+            <input type="text" id="inputFNac" name="fNac" required>
+
+            <label for="DNI">DNI:</label>
+            <input type="text" id="inputDNI" name="DNI" required>
+        </div>
+    </div>
+    <div id="divApellidos">
+        <label for="apellidos">Apellidos:</label>
+        <div id="inputApellidos">
+            <input type="text" id="inputDeApellidos">
+        </div>
+    </div>
+    <div id="divCalleNum">
+        <label for="calleNum">Calle y número:</label>
+        <div id="inputCaleNumero">
+            <input type="text" id="inputDeCalleNumero">
+        </div>
+    </div>
+    <div id="divCodigoPost">
+        <label for="codigoPostal">Código Postal:</label>
+        <div id="inputCiudadCodigoPostal">
+            <input type="text" id="inputCodigoPostal">
+
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="inputCiudad">
+        </div>
+    </div>
+
+    <div id="divProvincia">
+        <label for="provincia">Provincia:</label>
+        <div id="inputProvinciaTelf">
+            <input type="text" name="provincia" id="inputProvincia">
+            <label for="telefono">Telefono:</label>
+            <input type="text" name="telefono" id="inputTelefono">
+        </div>
+    </div>
+    <div id="divOpciones">
+        <label for="opcion">Opción:</label>
+        <div id="divSelect">
+            <select name="opciones" id="selectOpciones">
+                <option value="opcion1">OPCION 1</option>
+                <option value="opcion2">OPCION 2</option>
+            </select>
+            <label for="escoja">Escoja una opción</label>
+        </div>
+    </div>
+    <div id="divComentarios">
+        <label for="comentariosPersonales">Comentarios personales:</label>
+        <div id="divtextAreaComentarios">
+            <textarea name="comentarios" id="textComentarios" cols="86"></textarea>
+        </div>
+    </div>
+    <div id="divBotones">
+        <label for="pulseAqui"><b>Pulse aquí:</b></label>
+        <div id="divBotones2">
+            <button>Enviar datos</button>
+            <button>Borrar los datos</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

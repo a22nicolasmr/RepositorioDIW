@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura basica</title>
+    <style>
+        #cabeceira {
+            background-color: black;
+            color: yellow;
+            min-height: 5vh;
+            width: 100%;
+            display: grid; place-items: center start;
+            
+        }
+        #cabeceira p{
+            margin-left: 1cm;
+        }
+
+        #navegacion {
+            display: flex;
+            background-color: grey;
+            color: greenyellow;
+            flex-direction: column;
+            min-height: 50vh;
+            min-width: 15vh;
+            width: 100%;
+            justify-content:center;
+            
+        }
+        #navegation p{
+            color: greenyellow;
+        }
+    
+        #contido {
+            display: flex;
+            background-color: gainsboro;
+            color: magenta;
+            flex-direction: column;
+            min-height: 50vh;
+            width: 100%;
+            font-size: xx-large;
+        }
+
+        #pe {
+            background-color: darkgray;
+            color: red;
+            min-height: 5vh;
+            width: 100%;
+            display: grid; place-items: center ;
+        }
+
+        #navegacionContido {
+            display: flex;
+            flex-direction: row;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="cabeceira">
+            <p>Párrafo en la cabecera de la página</p>
+        </div>
+    </header>
+    <div id="navegacionContido">
+        <nav>
+            <div id="navegacion">
+                <a href="">Enlace 1</a>
+                <a href="">Enlace 2</a>
+                <a href="">Enlace 3</a>
+            </div>
+        </nav>
+        <div id="contido">
+            <p><b>Ejemplo:Uso del elemento "div" y del atributo <i>id</i></b></p>
+        </div>
+    </div>
+
+    <footer>
+        <div id="pe">
+            <p>Párrafo en el pie de la página.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

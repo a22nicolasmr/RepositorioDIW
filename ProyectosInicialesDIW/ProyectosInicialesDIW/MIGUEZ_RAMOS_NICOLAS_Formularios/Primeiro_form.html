@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro formulario</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40vw;
+            height: 30vh;
+            border: 0.01cm solid;
+            border-radius: 1ch;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #divNombre,#divMensaje,#divBoton,#divCorreo{
+            display: flex;
+            margin: 0.3cm;
+            
+        }
+        #divCorreo{
+            flex: 0.10;
+            display: flex;
+            align-items: flex-end;
+        }
+        input,textarea{
+            width: 100%;
+        }
+        #divBoton{
+            margin-left: 9.3cqb;
+        }
+        label{
+            width: 100px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form action="Enviar_Datos" method="post">
+        <div id="divNombre">
+            <label for="divNombre">Nombre: </label>
+            <input type="text" id="inputNombre" name="nombre" required />
+        </div>
+
+        <div id="divCorreo">
+            <label for="divCorreo">Correo electrónico: </label>
+            <input type="text" id="inputCorreo" name="correo" required />
+        </div>
+        <div id="divMensaje">
+            <label for="divMensaje">Mensaje:</label>
+            <textarea id="textAreaMensaje" name="mensaje" rows="4" cols="40"></textarea>
+        </div>
+        <div id="divBoton">
+            <button type="button">Envía tu mensaje</button>
+        </div>
+    </form>
+</body>
+
+</html>

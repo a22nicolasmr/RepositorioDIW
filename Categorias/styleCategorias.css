@@ -1,15 +1,6 @@
 body {
   margin: 0;
 }
-/* header {
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-areas: "menu logo links";
-    align-items: center;
-    padding: 10px 20px;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.562);
-} */
 
 header div {
   display: flex;
@@ -19,6 +10,7 @@ header div {
 header {
   background-color: #87986a;
 }
+
 #logo {
   display: flex;
   justify-content: space-between;
@@ -100,7 +92,7 @@ ul {
   font-size: 18px;
   text-align: center;
   width: 400px;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -128,7 +120,7 @@ ul {
   font-size: 18px;
   text-align: center;
   width: 400px;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,7 +149,7 @@ ul {
   font-size: 18px;
   text-align: center;
   width: 400px;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -186,7 +178,7 @@ ul {
   font-size: 18px;
   text-align: center;
   width: 400px;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,7 +207,7 @@ ul {
   font-size: 18px;
   text-align: center;
   width: 400px;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,7 +236,7 @@ ul {
   font-size: 18px;
   text-align: center;
   width: 400px;
-  height: 150px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
